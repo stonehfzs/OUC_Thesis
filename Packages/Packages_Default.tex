@@ -1,0 +1,70 @@
+%*******************************************************
+% 模板原始宏包，请不要修改此文件，
+% 新宏包可在 Packages_Custom 文件中添加
+%*******************************************************
+%\usepackage[utf8]{inputenc}
+%\usepackage{xCJK2uni}
+\usepackage{ragged2e}       % 中英文断词宏包，使排版更整齐
+\usepackage{ccmap}          % 使PDF文件中文字复制后不乱码，能够被查重检测系统识别
+\usepackage{fancyhdr}       % 设置页眉页脚
+\usepackage{rotating}       % 字体、图表等旋转宏包
+\usepackage{enumerate}      % 列表编号宏包
+%\usepackage{enumitem}
+\usepackage{xifthen}        % 判断语句宏包，用于设置引用
+%\usepackage[page,title,titletoc,header]{appendix} % 定制附录样式宏包
+\usepackage{multirow}       % 使用多行宏包
+\usepackage{multicol}       % 使用多栏宏包
+\usepackage{chngpage}       % 页面设置宏包
+\usepackage{array}          % 数学数组宏包，编辑表格时也会用到
+\usepackage{mathdots}       % 数学点符号宏包
+\usepackage{amssymb}        % AMS数学符号宏包
+\usepackage{amsmath,bm}     % 多行公式环境
+\usepackage{amsthm}         % 定理环境
+\usepackage{graphicx}       % 插图宏包
+\usepackage{listings}       % 程序代码列表宏包，如MATLAB、FORTRAN、C语言等
+\usepackage{framed}         % 文字添加边框宏包，做为代码的背景使用
+\usepackage{wallpaper}      % 添加背景图片和水印的宏包
+\usepackage{slashbox}       % 绘制表格斜线宏包
+\usepackage{xcolor}         % 颜色处理相关的宏包
+\usepackage{color}          % 预定义颜色宏包
+\usepackage{float}          % 图表、算法浮动显示宏包
+\usepackage{titlesec}       % 章节标题定制宏包
+\usepackage{titletoc}       % 定制目录样式宏包
+\usepackage[titles]{tocloft}% 自定义标题目录、图形目录和表格目录的式样
+\usepackage{Packages/bibspacing}     % 设置参考文献间距
+\usepackage{ifthen}         % 导入ifthenelse
+\usepackage[%
+paperwidth=21.0cm,          % 页面宽度 21.59cm\setlength{\footskip}{25pt}
+paperheight=29.7cm,         % 页面高度 27.94cm
+footskip=22pt,              % 页码与正文的间距
+headsep=20pt,               % 页眉与正文的间距
+left=2.5cm,                 % 左边距
+right=2.5cm,                % 右边距
+top=2.5cm,                  % 上边距
+bottom=2.5cm                % 下边距
+]{geometry}                 % 版面样式设置的基本宏包
+\usepackage{setspace}        % 行间距
+\usepackage{booktabs}        % 三线表格
+%\usepackage[backend=biber,bibstyle=Packages/gbt-7714-2015.dtx]{biblatex}
+%\usepackage[backend=biber,bibstyle=Packages/gb7714_2015]{biblatex}
+%\usepackage[backend=biber,texlive2015,bibstyle=Packages/gb7714_2015,%nature,%
+%citestyle=Packages/gb7714_2015%,backref=true%
+%]{biblatex}
+%\input{Packages/gbt7714.sty}     % 设置参考文献间距
+%===============================================
+% 书签设置宏包
+% \usepackage[pdftex,CJKbookmarks=true,bookmarks=true,pdfstartview=FitH,
+% colorlinks=true,linkcolor=black,citecolor=black,unicode]{hyperref}
+%===============================================
+%\usepackage{CJKutf8}
+\usepackage[pdftex,bookmarks=true,pdfstartview=FitH,
+colorlinks=true,linkcolor=black,citecolor=black,unicode]{hyperref}
+%\hypersetup{unicode}
+\usepackage[linesnumbered,boxed,commentsnumbered]{algorithm2e}
+%\usepackage[linesnumbered,boxed,commentsnumbered]{algorithm2e}      % 算法包，注意设置所需可选项
+%\usepackage{algorithm,algorithmic}
+\usepackage{cite}           % 文献引用宏包，引用时编号压缩，如[5,6,7,8] --> [5-8]，注释该宏包恢复默认
+%\usepackage[hyperref=true,backend=biber,sorting=none,backref=true]{biblatex}
+%\usepackage[sort&compress,longnamesfirst]{natbib}
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
