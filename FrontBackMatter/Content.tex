@@ -1,0 +1,77 @@
+%%*******************************************************
+%% 目 录
+%%*******************************************************
+%\pdfbookmark[1]{目录}{contents}
+%\pagestyle{fancy}
+%\mkheadfoot
+%\label{contents}
+%\tableofcontents
+%
+%%\clearpage
+%%\label{figures}
+%%\listoffigures
+%%
+%\kongbaiye
+%%\label{tables}
+%%\listoftables
+
+%=========================================================================================================================================
+% 中 文 目 录
+%=========================================================================================================================================
+
+
+\pagestyle{fancy}   %激活宏包
+\renewcommand{\headrulewidth}{0pt}  %清除页眉横线
+\pagestyle{plain}  % 去掉页眉
+%\thispagestyle{empty}
+%\mkheadfoot
+\pdfbookmark[1]{目录}{contents}
+\label{contents}
+\tableofcontents
+
+
+\kongbaiye
+%=========================================================================================================================================
+% 英 文 目 录
+%=========================================================================================================================================
+
+
+%\pagestyle{fancy}   %激活宏包
+%\renewcommand{\headrulewidth}{0pt}  %清除页眉横线
+\pagestyle{plain}  % 去掉页眉
+%\thispagestyle{empty}
+\pdfbookmark[1]{Contents}{contents}
+\tableofengcontents
+
+\kongbaiye
+%\pdfbookmark[1]{图表清单}{contents}
+%{%
+%\let\oldnumberline\numberline%
+%\renewcommand{\numberline}{\muluzhangset\figurename~\oldnumberline}%
+%\listoffigures%
+%}
+%\label{figures}
+\listoffigures
+\vskip-60pt % 请不用改动此处，这里将图表按照word模板连接并空出一行
+~
+%\label{tables}
+\listoftables
+
+\kongbaiye
+\zhushibiaoname
+%\pdfbookmark[1]{注释表}{contents}
+
+\begin{center}
+\begin{tabular}{m{2.5cm}<{\centering}   m{6.5cm}<{\centering}  m{6cm}<{\centering}}
+  \toprule
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  {\hei \sihao 英文缩写} & {\hei \sihao 英文全称} & {\hei \sihao 中文全称} \\ \midrule
+  AMOC & Atlantic Meridional Overturning Circulation & 大西洋经向翻转流 \\
+  OSNAP & Overturning in the Subpolar North Atlantic Program & 北大西洋亚极地翻转流计划 \\
+  ADCP & Acoustic Doppler Current Profiler & 声学多普勒流速剖面仪 \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+\kongbaiye
+

@@ -1,0 +1,75 @@
+%*******************************************************
+% 附录
+%*******************************************************
+%=========================================
+% 附录中添加章节，请使用\appendixsection{标题名}
+%=========================================
+\clearpage
+\phantomsection
+
+%\appendixtitle
+\begin{appendix}
+\appendixset
+\newpage
+\phantomsection
+~
+\vskip-36pt
+~ % 请在section前保持以上三行，这是与word模板对比的结果
+\appendixsection{各向同性假设}
+\vskip+6pt
+\esection{\hspace{-1.5em}Appendix A} % 这里是为了目录中对齐设置的数据，请勿改动
+\label{chA}
+
+各向同性作为本文第三章和第四章作为关键的假设之一，
+我们使用~Soares\upcite{7}提出的指标对其进行了检验。首先我们对流速结果进行了直接的检验。
+对于流速大于~$0.5\text{m}/\text{s}$~的经向纬向流速存在弱的不对称现象。
+但是对于流速小于~$0.5\text{m}/\text{s}$~(一般为亚中尺度过程流速量级)~红色区域表现为正圆形，因此满足各向同性假设。$\cdots\cdots$
+
+\begin{figure}[htb!]
+\begin{center}
+  \includegraphics[width=0.6\textwidth]{fulu.pdf}
+  \captions[Iceland Basin~的经向流速和纬向流速]
+  {~Iceland Basin~的经向流速~($X$~轴)~和纬向流速~($Y$~轴)}
+  \label{appfig1_2}
+  Fig.~\ref{appfig1_2}~~Meridional velocity and zonal velocity in Iceland Basin
+\end{center}
+\end{figure}
+
+%=========================================
+% 代码举例
+%=========================================
+%% BEGIN
+%\appendixsection{代码举例}
+%\begin{shaded}
+%\begin{lstlisting}
+%function c = FD_coeff( k, x0, x )
+%% This code use the symbolic variables to compute the coefficients c of k'th
+%% derivative at the center point x0 with the desired stencil points x.
+%% The approximation order of the k'th derivative with the coefficients c is
+%% length(x) - k.
+%%
+%% For example,
+%%   >> c = FD_coeff( 2, 1/2, -2:3 )  % dx = 1 for the stencil points x
+%%   c =
+%%   [ -5/48, 13/16, -17/24, -17/24, 13/16, -5/48]
+%
+%n = length( x );                    % "The number of the stencil points"
+%
+%A = sym(  ones(n,n) );
+%b = sym( zeros(n,1) ); b(k+1) = factorial( k );  % "The right hand side"
+%
+%h = sym( (x(:)-x0)' );
+%
+%for i = 2:n                         % "Creat Vandermonde matrix"
+%    A(i,:) = sym( (h.^(i-1)) ) ;
+%end
+%
+%c = (A\b)';                         % "The coefficients"
+%\end{lstlisting}
+%\end{shaded}
+%% END
+
+
+\end{appendix}
+
+\kongbaiye
